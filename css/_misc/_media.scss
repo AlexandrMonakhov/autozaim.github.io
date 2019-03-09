@@ -1,0 +1,27 @@
+@media (max-width: 1201px) {
+    .header {
+        &-button {
+            font-size: inherit;
+            padding: .5rem;
+        }
+        &-phone {
+            font-size: inherit;
+        }
+    }
+    .money-bag {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    .header {
+        &-logo {
+            margin: 3.062rem 0rem 0rem 0rem;
+        }
+    }
+    .money-bag {
+        display: none;
+    }
+    .stages {
+        display: none;
+    }
+}

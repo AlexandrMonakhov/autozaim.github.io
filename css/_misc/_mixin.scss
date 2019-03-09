@@ -1,0 +1,22 @@
+/* Fonts mixin */
+
+@mixin bold {
+    font-family: 'P22 Underground CY Pro', sans-serif;
+    font-weight: bold;
+}
+@mixin thin {
+    font-family: 'P22 Underground CY Pro', sans-serif;
+    font-weight: 100;
+}
+@mixin normal {
+    font-family: 'P22 Underground CY Pro', sans-serif;
+    font-weight: normal;
+}
+@mixin heavy {
+    font-family: 'P22 Underground CY Pro', sans-serif;
+    font-weight: 900;
+}
+@mixin medium {
+    font-family: 'P22 Underground CY Pro', sans-serif;
+    font-weight: 500;
+}

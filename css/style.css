@@ -1,0 +1,326 @@
+/* Import _misc */
+/* Color scheme */
+/* Fonts */
+@font-face {
+  font-family: 'P22 Underground CY Pro';
+  src: url("../fonts/P22UndergroundCYPro-Book.eot");
+  src: url("../fonts/P22UndergroundCYPro-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/P22UndergroundCYPro-Book.woff2") format("woff2"), url("../fonts/P22UndergroundCYPro-Book.woff") format("woff"), url("../fonts/P22UndergroundCYPro-Book.ttf") format("truetype"), url("../fonts/P22UndergroundCYPro-Book.svg#P22UndergroundCYPro-Book") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'P22 Underground CY Pro';
+  src: url("../fonts/P22UndergroundCYPro-Thin.eot");
+  src: url("../fonts/P22UndergroundCYPro-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/P22UndergroundCYPro-Thin.woff2") format("woff2"), url("../fonts/P22UndergroundCYPro-Thin.woff") format("woff"), url("../fonts/P22UndergroundCYPro-Thin.ttf") format("truetype"), url("../fonts/P22UndergroundCYPro-Thin.svg#P22UndergroundCYPro-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'P22 Underground CY Pro';
+  src: url("../fonts/P22UndergroundCYPro-Demi.eot");
+  src: url("../fonts/P22UndergroundCYPro-Demi.eot?#iefix") format("embedded-opentype"), url("../fonts/P22UndergroundCYPro-Demi.woff2") format("woff2"), url("../fonts/P22UndergroundCYPro-Demi.woff") format("woff"), url("../fonts/P22UndergroundCYPro-Demi.ttf") format("truetype"), url("../fonts/P22UndergroundCYPro-Demi.svg#P22UndergroundCYPro-Demi") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'P22 Underground CY Pro';
+  src: url("../fonts/P22UndergroundCYPro-Heavy.eot");
+  src: url("../fonts/P22UndergroundCYPro-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/P22UndergroundCYPro-Heavy.woff2") format("woff2"), url("../fonts/P22UndergroundCYPro-Heavy.woff") format("woff"), url("../fonts/P22UndergroundCYPro-Heavy.ttf") format("truetype"), url("../fonts/P22UndergroundCYPro-Heavy.svg#P22UndergroundCYPro-Heavy") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'P22 Underground CY Pro';
+  src: url("../fonts/P22UndergroundCYPro-Medium.eot");
+  src: url("../fonts/P22UndergroundCYPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/P22UndergroundCYPro-Medium.woff2") format("woff2"), url("../fonts/P22UndergroundCYPro-Medium.woff") format("woff"), url("../fonts/P22UndergroundCYPro-Medium.ttf") format("truetype"), url("../fonts/P22UndergroundCYPro-Medium.svg#P22UndergroundCYPro-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Fonts mixin */
+/* Base settings */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+button, button:focus, button:active {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+
+/* Main styles */
+.header {
+  background: #000000 url("../img/header/header-background.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 46.875rem;
+}
+
+.header-logo {
+  margin: 3.062rem 0rem;
+}
+
+.header-callback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-button {
+  font-size: .9375rem;
+  font-family: 'P22 Underground CY Pro', sans-serif;
+  font-weight: 100;
+  text-transform: lowercase;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: .2rem;
+  color: #ffffff;
+  margin: 3.062rem 0rem;
+  padding: .8rem 1.5rem;
+}
+
+.header-phone {
+  font-size: 1.4rem;
+  font-family: 'P22 Underground CY Pro', sans-serif;
+  font-weight: 900;
+  color: #ffffff;
+  margin-left: 1rem;
+}
+
+.header-title {
+  text-align: center;
+  font-size: 2.3rem;
+  font-family: 'P22 Underground CY Pro', sans-serif;
+  font-weight: 900;
+  color: #ffff33;
+  text-transform: uppercase;
+}
+
+.consultation {
+  color: #ffffff;
+}
+
+.consultation-form {
+  background: #ffffff;
+  border-radius: .2rem;
+  padding: 3.125rem;
+}
+
+.consultation-form-title {
+  text-align: center;
+  font-size: 1.375rem;
+  font-family: 'P22 Underground CY Pro', sans-serif;
+  font-weight: bold;
+  color: #000000;
+}
+
+.consultation-container-form-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: .8rem;
+}
+
+.consultation-input {
+  width: 100%;
+  padding: 1.25rem;
+  border: 1px solid #333333;
+  border-top-right-radius: 0.15rem;
+  border-bottom-right-radius: 0.15rem;
+}
+
+.consultation-benefit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.1rem;
+  font-family: 'P22 Underground CY Pro', sans-serif;
+  font-weight: bold;
+}
+
+.consultation-benefit-title::before {
+  content: '>';
+  color: #ffffff;
+  margin-right: .5rem;
+}
+
+.consultation-button {
+  width: 100%;
+  border: none;
+  background: #ffff33;
+  padding: 1.25rem;
+  -webkit-box-shadow: 0px 3px 1px #999900;
+          box-shadow: 0px 3px 1px #999900;
+}
+
+.icon {
+  background: #333333;
+  color: #ffffff;
+  padding: 1.25rem;
+  border-top-left-radius: 0.15rem;
+  border-bottom-left-radius: 0.15rem;
+  width: 3.75rem;
+  text-align: center;
+}
+
+.money-bag-img {
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(-110%);
+          transform: translateY(-110%);
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.hero {
+  margin-bottom: 4.5rem;
+}
+
+.advantages {
+  text-align: center;
+  margin-top: 6.5625rem;
+}
+
+.advantages-description {
+  display: block;
+  margin-top: 2rem;
+  font-size: 1.125rem;
+  font-family: 'P22 Underground CY Pro', sans-serif;
+  font-weight: bold;
+}
+
+.stages-scale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #ffff33;
+  font-size: 6.25rem;
+  font-family: 'P22 Underground CY Pro', sans-serif;
+  font-weight: 900;
+}
+
+.stages-text {
+  text-align: center;
+  width: 14.45rem;
+}
+
+.stages_number {
+  position: relative;
+}
+
+.stages_number::after {
+  content: '';
+  position: absolute;
+  top: 7.4rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #ffff33;
+}
+
+.stages_title {
+  border-top: 2px solid #ffff33;
+  padding: 1rem 2rem;
+  text-align: center;
+  display: block;
+  font-size: 1.125rem;
+  font-family: 'P22 Underground CY Pro', sans-serif;
+  font-weight: bold;
+  color: #000000;
+}
+
+.callback-form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #333333;
+  padding: 2.5rem;
+  margin: 3.125rem 0rem;
+}
+
+.callback-container-form-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: .8rem;
+}
+
+.callback-input {
+  background: #333333;
+  width: 100%;
+  padding: 1.25rem;
+  border: 1px solid #ffffff;
+  border-top-right-radius: 0.15rem;
+  border-bottom-right-radius: 0.15rem;
+}
+
+.callback-icon {
+  width: 3.75rem;
+  color: #000000;
+  background: #ffffff;
+}
+
+.callback-button {
+  width: 100%;
+  border: none;
+  background: #ffff33;
+  padding: 1.25rem;
+  -webkit-box-shadow: 0px 3px 1px #999900;
+          box-shadow: 0px 3px 1px #999900;
+}
+
+@media (max-width: 1201px) {
+  .header-button {
+    font-size: inherit;
+    padding: .5rem;
+  }
+  .header-phone {
+    font-size: inherit;
+  }
+  .money-bag {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-logo {
+    margin: 3.062rem 0rem 0rem 0rem;
+  }
+  .money-bag {
+    display: none;
+  }
+  .stages {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
